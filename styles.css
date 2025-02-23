@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: clamp(2.5rem, 70vw, 3.8rem);
 }
 
 h2 {
@@ -47,17 +47,19 @@ fieldset {
 
 #palindrome-input {
   min-height: 3rem;
-  width: 25vw;
+  width: 45vw;
   border-radius: 5px;
   text-align: center;
   font-size: 1.5rem;
   margin: 0 auto;
 }
-
+.palindrome-info-container {
+  display: flex;
+  justify-content: center;
+}
 .palindrome-info {
-  margin: 1rem auto;
-  width: 49vw;
-  padding: 1rem;
+  width: 85%;
+  padding: 3vw;
   background-color: var(--green);
   border-radius: 2rem;
 }
